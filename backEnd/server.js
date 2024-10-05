@@ -2,7 +2,11 @@ const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
 const app = express();
+
 const PORT = process.env.PORT || 3000;
+
+require('dotenv').config();
+const accessToken = process.env.ACCESS_TOKEN;
 
 
 app.use(bodyParser.json());
@@ -26,11 +30,18 @@ app.post('api/location-verification', async (req, res) => {
           maxAge: maxAge
         }, {
           headers: {
-            'Authorization': 'Bearer YOUR_ACCESS_TOKEN', // Add your access token here
+            'Authorization': `Bearer ${accessToken}`,
             'Cache-Control': 'no-cache',
             'accept': 'application/json',
             'Content-Type': 'application/json'
           }
         });
+
+        res.status(200).json(response.data);
+        console.log(response.data);
+    } catch {
+        console.error('Error calling location verification API:', error);
+        res.status(500).json({ message: 'Error calling location verification API', error });
+    }
 });
 
