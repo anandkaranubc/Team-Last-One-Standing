@@ -3,16 +3,16 @@ import React from "react";
 
 const personaData = [
   {
-    profileName: "Cafe",
-    groups: ["East", "North"],
+    profileName: "Food-Lover",
+    groups: ["Starbucks", "Tim Horton's"],
   },
   {
-    profileName: "Corporate",
-    groups: ["North", "West"],
+    profileName: "Studious",
+    groups: ["ICICS/CS", "ESB", "LSK"],
   },
   {
-    profileName: "Shopping District",
-    groups: ["West", "South"],
+    profileName: "Nalla",
+    groups: ["Ponderosa"],
   },
 ];
 

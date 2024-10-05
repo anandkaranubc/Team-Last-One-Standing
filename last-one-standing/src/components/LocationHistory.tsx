@@ -1,26 +1,61 @@
 // components/LocationHistory.tsx
 import React from "react";
-
+const Locs = [
+  {
+    name: "Tim Horton's",
+    latitude: 49.26908,
+    longitude: -123.24872,
+  },
+  {
+    name: "Starbucks",
+    latitude: 49.26545,
+    longitude: -123.24991,
+  },
+  {
+    name: "LSK",
+    latitude: 49.26908,
+    longitude: -123.25514,
+  },
+  {
+    name: "ESB",
+    latitude: 49.26335,
+    longitude: -123.24984,
+  },
+  {
+    name: "ICICS",
+    latitude: 49.26118,
+    longitude: -123.24918,
+  },
+  {
+    name: "Ponderosa",
+    latitude: 49.26417,
+    longitude: -123.25583,
+  },
+];
 const locationData = [
   {
-    area: "East Vancouver",
-    duration: "2 hours",
+    area: "Food-Lover",
     time: "2023-10-01 10:00 AM",
   },
   {
-    area: "West Vancouver",
-    duration: "1.5 hours",
-    time: "2023-10-02 2:00 PM",
+    area: "Food-Lover",
+    time: "2023-10-01 11:00 AM",
   },
   {
-    area: "North Vancouver",
-    duration: "3 hours",
-    time: "2023-10-03 9:00 AM",
+    area: "Food-Lover",
+    time: "2023-10-01 12:00 AM",
   },
   {
-    area: "South Vancouver",
-    duration: "1 hour",
-    time: "2023-10-04 5:00 PM",
+    area: "Nalla",
+    time: "2023-10-01 1:00 PM",
+  },
+  {
+    area: "Nalla",
+    time: "2023-10-01 2:00 PM",
+  },
+  {
+    area: "Studious",
+    time: "2023-10-01 3:00 PM",
   },
 ];
 
