@@ -35,26 +35,38 @@ const Locs = [
 const locationData = [
   {
     area: "Food-Lover",
+    latitude: 49.26906,
+    longitude: -123.24873,
     time: "2023-10-01 10:00 AM",
   },
   {
     area: "Food-Lover",
+    latitude: 49.26905,
+    longitude: -123.24873,
     time: "2023-10-01 11:00 AM",
   },
   {
     area: "Food-Lover",
+    latitude: 49.26906,
+    longitude: -123.24872,
     time: "2023-10-01 12:00 AM",
   },
   {
     area: "Nalla",
+    latitude: 49.26416,
+    longitude: -123.25583,
     time: "2023-10-01 1:00 PM",
   },
   {
     area: "Nalla",
+    latitude: 49.26417,
+    longitude: -123.25584,
     time: "2023-10-01 2:00 PM",
   },
   {
     area: "Studious",
+    latitude: 49.26117,
+    longitude: -123.24917,
     time: "2023-10-01 3:00 PM",
   },
 ];
@@ -73,7 +85,11 @@ export default function LocationHistory() {
               <span className="font-semibold">Area:</span> {item.area}
             </p>
             <p className="text-lg text-gray-800 mb-1">
-              <span className="font-semibold">Duration:</span> {item.duration}
+              <span className="font-semibold">Latitude:</span> {item.latitude}
+            </p>
+            <p className="text-lg text-gray-800 mb-1">
+              <span className="font-semibold">Longitutde:</span>{" "}
+              {item.longitude}
             </p>
             <p className="text-lg text-gray-800">
               <span className="font-semibold">Time:</span> {item.time}
