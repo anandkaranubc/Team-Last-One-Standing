@@ -2,11 +2,13 @@ const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
 const app = express();
+const { run} = require("./database");
 
-const PORT = process.env.PORT || 3000;
+
+const PORT = 3000;
 
 require('dotenv').config();
-const accessToken = process.env.ACCESS_TOKEN;
+const accessToken = "29daf7";
 
 
 app.use(bodyParser.json());
@@ -45,3 +47,6 @@ app.post('api/location-verification', async (req, res) => {
     }
 });
 
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
