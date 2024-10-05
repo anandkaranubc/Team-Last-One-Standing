@@ -46,7 +46,7 @@ app.post('api/location-verification', async (req, res) => {
         res.status(500).json({ message: 'Error calling location verification API', error });
     }
 });
-
+run();
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
