@@ -1,0 +1,210 @@
+/* AuthPage.css */
+
+.auth-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+
+.auth-container {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.logo h2 {
+  text-align: center;
+  color: #764ba2;
+  margin-bottom: 20px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #f0f0f0;
+  font-size: 16px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  background: #e0e0e0;
+}
+
+.auth-form button {
+  padding: 15px;
+  background: #764ba2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background: #667eea;
+}
+
+.auth-form p {
+  text-align: center;
+  margin-top: 20px;
+  color: #555555;
+}
+
+.auth-form span {
+  color: #764ba2;
+  cursor: pointer;
+}
+
+.auth-form span:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: #667eea;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+/* From Uiverse.io by mobinkakei */
+.btn-lock {
+  position: relative;
+  /* top: calc(50% - 32px);
+  left: calc(50% - 32px); */
+  display: inline-block;
+  background: #ff5b5b;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  padding: 12px 0 0 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn-lock svg {
+  fill: none;
+  transform: translate3d(0, 0, 0);
+}
+
+.btn-lock svg .bling {
+  stroke: #fff;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 3;
+  stroke-dashoffset: 15;
+  transition: all 0.3s ease;
+}
+
+.btn-lock svg .lock {
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 36;
+  transition: all 0.4s ease;
+}
+
+.btn-lock svg .lockb {
+  fill: #fff;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  transform: rotate(8deg);
+  transform-origin: 14px 20px;
+  transition: all 0.2s ease;
+}
+
+#inpLock {
+  display: none;
+}
+
+#inpLock:checked + label {
+  background: #20cca5;
+}
+
+#inpLock:checked + label svg {
+  opacity: 1;
+}
+
+#inpLock:checked + label svg .bling {
+  animation: bling6132 0.3s linear forwards;
+  animation-delay: 0.2s;
+}
+
+#inpLock:checked + label svg .lock {
+  stroke-dasharray: 48;
+  animation: locked 0.3s linear forwards;
+}
+
+#inpLock:checked + label svg .lockb {
+  transform: rotate(0);
+  transform-origin: 14px 22px;
+}
+
+@keyframes bling6132 {
+  50% {
+    stroke-dasharray: 3;
+    stroke-dashoffset: 12;
+  }
+
+  100% {
+    stroke-dasharray: 3;
+    stroke-dashoffset: 9;
+  }
+}
+
+@keyframes locked {
+  50% {
+    transform: translateY(1px);
+  }
+}
+
+/* AuthPage.css */
+
+.unclickable-button {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.terms-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px;       /* Add some margin for spacing */
+}
+
+.login-prompt {
+  text-align: center;               /* Center align the text */
+  margin-top: 20px;                /* Add some spacing above */
+}
+
+.login-link {
+  color: blue;                     /* Link color */
+  cursor: pointer;                 /* Change cursor to pointer */
+}
+
+.login-link:hover {
+  text-decoration: underline;      /* Underline on hover */
+}

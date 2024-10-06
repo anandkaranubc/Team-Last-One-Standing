@@ -1,0 +1,17 @@
+/* styles/Dashboard.css */
+
+.dashboard {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .promo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  h2 {
+    margin-top: 40px;
+  }
+  
