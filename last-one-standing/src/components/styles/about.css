@@ -1,45 +1,70 @@
 /* AboutUs.css */
+
+.about-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+
 .about-container {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  
-  .hero-section {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #f4f4f4;
-  }
-  
-  .hero-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  .hero-content p {
-    font-size: 18px;
-    color: #555;
-  }
-  
-  .team-section {
-    padding: 50px 0;
-    text-align: center;
-  }
-  
-  .team-members {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .team-member {
-    width: 250px;
-  }
-  
-  .profile-pic {
-    width: 100%;
-    border-radius: 50%;
-  }
-  
-  .mission-section, .values-section {
-    margin-top: 40px;
-  }
-  
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  text-align: center;
+  color: #764ba2;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-text {
+  text-align: justify;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-highlight {
+  color: #667eea;
+  font-weight: bold;
+}
+
+.about-footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #555555;
+}
+
+.about-footer a {
+  color: #764ba2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.about-footer a:hover {
+  text-decoration: underline;
+}
+
+
+.get-started-btn {
+  padding: 15px;
+  background: #764ba2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  background: #667eea;
+}

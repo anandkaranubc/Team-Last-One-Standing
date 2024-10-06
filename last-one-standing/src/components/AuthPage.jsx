@@ -25,7 +25,7 @@ function AuthPage() {
 
     // TODO: Add authentication logic here
     // After authentication, navigate to the desired page
-    navigate("/dashboard");
+    navigate("/");
   };
 
   return (
@@ -39,10 +39,10 @@ function AuthPage() {
           <form className="auth-form" onSubmit={handleSubmit}>
             {!isLogin ? (
               <>
-                <input type="text" name="firstName" autoComplete="off" placeholder="First Name" required />
-                <input type="text" name="lastName" autoComplete="off" placeholder="Last Name" required />
-                <input type="tel" name="phoneNo" autoComplete="new-tel" placeholder="Phone No." required />
-                <input type="password" name="password" placeholder="Password" required />
+                <input type="text" name="firstName" autoComplete="off" placeholder="First Name" onChange={(e) => setFirstName(e.target.value)} required />
+                <input type="text" name="lastName" autoComplete="off" placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} required />
+                <input type="tel" name="phoneNo" autoComplete="new-tel" placeholder="Phone No." onChange={(e) => setPhoneNumber(e.target.value)} required />
+                <input type="password" name="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
 
                 {/* Terms and Conditions Checkbox */}
                 <div className="terms-container">
