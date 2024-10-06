@@ -39,9 +39,10 @@ function AuthPage() {
           <form className="auth-form" onSubmit={handleSubmit}>
             {!isLogin ? (
               <>
-                <input type="text" placeholder="Username" required />
-                <input type="email" placeholder="Email" required />
-                <input type="password" placeholder="Password" required />
+                <input type="text" name="firstName" autoComplete="off" placeholder="First Name" required />
+                <input type="text" name="lastName" autoComplete="off" placeholder="Last Name" required />
+                <input type="tel" name="phoneNo" autoComplete="new-tel" placeholder="Phone No." required />
+                <input type="password" name="password" placeholder="Password" required />
 
                 {/* Terms and Conditions Checkbox */}
                 <div className="terms-container">
@@ -61,7 +62,7 @@ function AuthPage() {
               </>
             ) : (
               <>
-                <input type="email" placeholder="Email" required />
+                <input type="tel" placeholder="Phone No." required />
                 <input type="password" placeholder="Password" required />
               </>
             )}
@@ -72,10 +73,12 @@ function AuthPage() {
               {isLogin ? "Login" : "Sign Up"}
             </button>
           </form>
+          <div className="login-prompt">
           <p>
             {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
             <span onClick={toggleForm}>{isLogin ? "Sign Up" : "Login"}</span>
           </p>
+          </div>
         </div>
       </div>
     </div>
