@@ -187,3 +187,24 @@ span:hover {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+
+.terms-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px;       /* Add some margin for spacing */
+}
+
+.login-prompt {
+  text-align: center;               /* Center align the text */
+  margin-top: 20px;                /* Add some spacing above */
+}
+
+.login-link {
+  color: blue;                     /* Link color */
+  cursor: pointer;                 /* Change cursor to pointer */
+}
+
+.login-link:hover {
+  text-decoration: underline;      /* Underline on hover */
+}
