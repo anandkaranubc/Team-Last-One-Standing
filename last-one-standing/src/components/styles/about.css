@@ -1,0 +1,45 @@
+/* AboutUs.css */
+.about-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .team-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .team-member {
+    width: 250px;
+  }
+  
+  .profile-pic {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .mission-section, .values-section {
+    margin-top: 40px;
+  }
+  

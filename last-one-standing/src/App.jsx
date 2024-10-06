@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import AuthPage from "./components/AuthPage"; // Make sure the path is correct
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import AboutUs from "./components/about";
 
 function Home() {
   return (
@@ -15,9 +16,9 @@ function Home() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <p>Welcome to the Home Page!</p>
-        <Link to="/auth">
-          <button>Login / Sign Up</button>
+        
+        <Link to="/about">
+          <button>Welcome to the Home Page!</button>
         </Link>
       </div>
       <p className="read-the-docs">Click on the React logo to learn more</p>
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<AuthPage />} />
+        <Route path="/about" element={<AboutUs />} />
         {/* You can add more routes here */}
       </Routes>
     </Router>
