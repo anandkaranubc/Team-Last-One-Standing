@@ -50,6 +50,12 @@ const Locs = [
     },
   ];
 
+  const user = {
+    phone : 14372314302,
+    consent: false,
+    cordinates: []
+  };
+
 async function run() {
     try {
         // Connect the client to the server
@@ -59,16 +65,39 @@ async function run() {
         console.log("Connected successfully to MongoDB server");
         
         const database = client.db("lastTeamStanding");
-        const collection = database.collection("partners");
+        const collection = database.collection("user");
 
         // Insert one document
-        const result = await collection.insertMany(Locs);
+        const result = await collection.insertOne(user);
     } finally {
         // Close the connection
         await client.close();
     }
 }
-run().catch(console.dir);
 
-module.exports = {run};
+
+
+async function getUser(phoneNumber) {
+  try {
+      // Connect the client to the server
+      await client.connect();
+
+      // Establish and verify connection
+      console.log("Connected successfully to MongoDB server");
+      
+      const database = client.db("lastTeamStanding");
+      const collection = database.collection("user");
+  console.log(phoneNumber);
+      // Insert one document
+      const user = await collection.insertOne({ phoneNumber: phoneNumber });
+      console.log(user);
+      return user;
+  } finally {
+
+  }
+}
+
+
+
+module.exports = {run, getUser};
 
