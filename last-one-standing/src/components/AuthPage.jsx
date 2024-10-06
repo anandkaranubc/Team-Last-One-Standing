@@ -25,7 +25,7 @@ function AuthPage() {
 
     // TODO: Add authentication logic here
     // After authentication, navigate to the desired page
-    navigate("/");
+    navigate("/dashboard");
   };
 
   return (
