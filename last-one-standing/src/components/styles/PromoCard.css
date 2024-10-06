@@ -1,0 +1,33 @@
+/* styles/PromoCard.css */
+
+.promo-card {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .barcode {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 20px;
+  }
+  
+  .promo-details {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .promo-details h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  
+  .promo-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
