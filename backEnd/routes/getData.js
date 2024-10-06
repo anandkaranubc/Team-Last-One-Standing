@@ -1,3 +1,4 @@
+const fs = require('fs');
 const express = require('express');
 const axios = require('axios');
 const router = express.Router();
@@ -20,8 +21,208 @@ router.post('/getData',
 
 
 
+// async function polling(phoneNumber) {
+//   // Retrieve users from your database or API
+//   const users = await getAllUsers();
 
-async function polling(phoneNumber) {
+//   // Retrieve businesses from your database or API
+//   const businesses = await getAllBusinesses();
+
+//   // Initialize an empty array to store successful responses
+//   let allVerificationDetails = [];
+
+//   const intervalFunction = async () => {
+//       for (const business of businesses) {
+//           for (const user of users) {
+//               const location = { latitude: business.latitude, longitude: business.longitude };
+
+//               let verificationSuccess = false;
+//               let timestamp;
+
+//               try {
+//                   // Perform verification for the primary location only
+//                   const response = await axios.post('https://pplx.azurewebsites.net/api/rapid/v0/location-verification/verify', {
+//                       device: { phoneNumber: user.phoneNumber },
+//                       area: {
+//                           type: 'Circle',
+//                           location: {
+//                               latitude: location.latitude,
+//                               longitude: location.longitude
+//                           },
+//                           accuracy: 0.001
+//                       },
+//                       maxAge: 0
+//                   }, {
+//                       headers: {
+//                           'Authorization': `Bearer ${user.accessToken}`,
+//                           'Cache-Control': 'no-cache',
+//                           'accept': 'application/json',
+//                           'Content-Type': 'application/json'
+//                       }
+//                   });
+
+//                   // console.log(response.data);
+//                   if (response.data.verificationResult) {
+//                       timestamp = response.data.lastLocationTime;
+//                       verificationSuccess = true;
+//                       // break; // Exit the loop on successful verification
+//                   }
+//               } catch (error) {
+//                   console.error(`Error processing user ${user.id}:`, error);
+//               }
+
+//               if (verificationSuccess) {
+//                   // Loop over all variations to save them, as required
+//                   const locations = [
+//                       { latitude: business.latitude, longitude: business.longitude },
+//                       // { latitude: business.latitude + 0.0005, longitude: business.longitude },
+//                       // { latitude: business.latitude, longitude: business.longitude + 0.0005 },
+//                       // { latitude: business.latitude - 0.0005, longitude: business.longitude },
+//                       // { latitude: business.latitude, longitude: business.longitude - 0.0005 }
+//                   ];
+
+//                   for (const loc of locations) {
+//                       const verificationDetails = {
+//                           userId: user._id.toString(),
+//                           latitude: loc.latitude,
+//                           longitude: loc.longitude,
+//                           business: business.name,
+//                           category: business.category,
+//                           timestamp: timestamp,
+//                       };
+
+//                       allVerificationDetails.push(verificationDetails);
+//                   }
+
+//                   // Stop further polling as soon as a successful verification is found
+//                   clearTimeout(timeoutId);
+//                   console.log("Verification successful. Stopping polling.");
+//                   // return; // Exit all loops if verification successful
+//               }
+//           }
+//       }
+
+//       // Save the results if any were found
+//       console.log(allVerificationDetails.length);
+//       if (allVerificationDetails.length > 0) {
+//           await save(allVerificationDetails);
+//       }
+
+//       // Schedule the next polling attempt after 1 minute
+//       timeoutId = setTimeout(intervalFunction, 1000);
+//   };
+
+//   // Start the initial polling attempt
+//   let timeoutId = setTimeout(intervalFunction, 1000);
+// }
+
+// PREV CODE - USE IF CURRENT NOT WORKING
+
+// async function polling(phoneNumber) {
+//   // Retrieve users from your database or API
+//   const users = await getAllUsers();
+
+//   // Retrieve businesses from your database or API
+//   const businesses = await getAllBusinesses();
+
+//   // Initialize an empty array to store successful responses
+//   let allVerificationDetails = [];
+
+//   // Define the log file path
+//   const logFilePath = './api_logs.txt';
+
+//   const intervalFunction = async () => {
+//       for (const business of businesses) {
+//           for (const user of users) {
+//               const location = { latitude: business.latitude, longitude: business.longitude };
+
+//               let verificationSuccess = false;
+//               let timestamp;
+
+//               try {
+//                   // Perform verification for the primary location only
+//                   const response = await axios.post('https://pplx.azurewebsites.net/api/rapid/v0/location-verification/verify', {
+//                       device: { phoneNumber: user.phoneNumber },
+//                       area: {
+//                           type: 'Circle',
+//                           location: {
+//                               latitude: location.latitude,
+//                               longitude: location.longitude
+//                           },
+//                           accuracy: 0.001
+//                       },
+//                       maxAge: 0
+//                   }, {
+//                       headers: {
+//                           'Authorization': `Bearer ${user.accessToken}`,
+//                           'Cache-Control': 'no-cache',
+//                           'accept': 'application/json',
+//                           'Content-Type': 'application/json'
+//                       }
+//                   });
+
+//                   // Log the API response to a file
+//                   const logEntry = `User ID: ${user.id}, Business: ${business.name}, Response: ${JSON.stringify(response.data)}\n`;
+//                   fs.appendFileSync(logFilePath, logEntry);
+
+//                   if (response.data.verificationResult) {
+//                       timestamp = response.data.lastLocationTime;
+//                       verificationSuccess = true;
+//                   }
+//               } catch (error) {
+//                   // Log the error to a file
+//                   const logEntry = `User ID: ${user.id}, Business: ${business.name}, Error: ${error.message}\n`;
+//                   fs.appendFileSync(logFilePath, logEntry);
+
+//                   console.error(`Error processing user ${user.id}:`, error);
+//               }
+
+//               if (verificationSuccess) {
+//                   // Loop over all variations to save them, as required
+//                   const locations = [
+//                       { latitude: business.latitude, longitude: business.longitude },
+//                   ];
+
+//                   for (const loc of locations) {
+//                       const verificationDetails = {
+//                           userId: user._id.toString(),
+//                           latitude: loc.latitude,
+//                           longitude: loc.longitude,
+//                           business: business.name,
+//                           category: business.category,
+//                           timestamp: timestamp,
+//                       };
+
+//                       allVerificationDetails.push(verificationDetails);
+//                   }
+
+//                   // Stop further polling as soon as a successful verification is found
+//                   clearTimeout(timeoutId);
+//                   console.log("Verification successful. Stopping polling.");
+//                   break;
+//               }
+//               if (verificationSuccess) {
+//                 break;
+//               }
+//           }
+//       }
+
+//       // Save the results if any were found
+//       console.log(allVerificationDetails.length);
+//       if (allVerificationDetails.length > 0) {
+//           await save(allVerificationDetails);
+//       }
+
+//       // Schedule the next polling attempt after 1 minute
+//       timeoutId = setTimeout(intervalFunction, 1000);
+//   };
+
+//   // Start the initial polling attempt
+//   let timeoutId = setTimeout(intervalFunction, 1000);
+// }
+
+// with json logging
+async function polling() {
   // Retrieve users from your database or API
   const users = await getAllUsers();
 
@@ -31,67 +232,90 @@ async function polling(phoneNumber) {
   // Initialize an empty array to store successful responses
   let allVerificationDetails = [];
 
-  // Set an interval to perform the polling every minute
-  const intervalId = setInterval(async () => {
+  // Define the log file path
+  const logFilePath = './api_logs.json';
+
+  // Initialize the log file with an empty array if it doesn't exist
+  if (!fs.existsSync(logFilePath)) {
+      fs.writeFileSync(logFilePath, JSON.stringify([]));
+  }
+
+  // Flag to control polling
+  let isPolling = true;
+
+  const intervalFunction = async () => {
+      if (!isPolling) return; // Prevent further execution if polling is stopped
+
       for (const business of businesses) {
           for (const user of users) {
-              // Array of latitude and longitude variations to check
-              const locations = [
-                  { latitude: business.latitude, longitude: business.longitude },
-                  // { latitude: business.latitude + 0.0005, longitude: business.longitude }, // Adding accuracy to latitude
-                  // { latitude: business.latitude, longitude: business.longitude + 0.0005 }, // Adding accuracy to longitude
-                  // { latitude: business.latitude - 0.0005, longitude: business.longitude }, // Subtracting accuracy from latitude
-                  // { latitude: business.latitude, longitude: business.longitude - 0.0005 }  // Subtracting accuracy from longitude
-              ];
+              const location = { latitude: business.latitude, longitude: business.longitude };
 
-              // Track whether any verification was successful
               let verificationSuccess = false;
               let timestamp;
 
-              for (const location of locations) {
-                  try {
-                      // Make the location verification request
-                      const response = await axios.post('https://pplx.azurewebsites.net/api/rapid/v0/location-verification/verify', {
-                          device: {
-                              phoneNumber: user.phoneNumber
+              try {
+                  // Perform verification for the primary location only
+                  const response = await axios.post('https://pplx.azurewebsites.net/api/rapid/v0/location-verification/verify', {
+                      device: { phoneNumber: user.phoneNumber },
+                      area: {
+                          type: 'Circle',
+                          location: {
+                              latitude: location.latitude,
+                              longitude: location.longitude
                           },
-                          area: {
-                              type: 'Circle',
-                              location: {
-                                  latitude: location.latitude,
-                                  longitude: location.longitude
-                              },
-                              accuracy: 0.0005 // Arbitrary accuracy value
-                          },
-                          maxAge: 0 // Arbitrary max age value
-                      }, {
-                          headers: {
-                              'Authorization': `Bearer ${user.accessToken}`,
-                              'Cache-Control': 'no-cache',
-                              'accept': 'application/json',
-                              'Content-Type': 'application/json'
-                          }
-                      });
-
-                      // Check if the verification result is true
-                      if (response.data.verificationResult) {
-                          timestamp = response.data.lastLocationTime;
-                          verificationSuccess = true;
-                          break; // Break out of the locations loop
+                          accuracy: 0.001
+                      },
+                      maxAge: 0
+                  }, {
+                      headers: {
+                          'Authorization': `Bearer ${user.accessToken}`,
+                          'Cache-Control': 'no-cache',
+                          'accept': 'application/json',
+                          'Content-Type': 'application/json'
                       }
-                  } catch (error) {
-                      console.error(`Error processing user ${user.id} at location (${location.latitude}, ${location.longitude}):`, error);
+                  });
+
+                  // Append the API response to the JSON log file
+                  const logEntry = {
+                      userId: user.id,
+                      business: business.name,
+                      response: response.data,
+                      timestamp: new Date().toISOString()
+                  };
+                  const logs = JSON.parse(fs.readFileSync(logFilePath));
+                  logs.push(logEntry);
+                  fs.writeFileSync(logFilePath, JSON.stringify(logs, null, 2)); // Pretty-print JSON
+
+                  if (response.data.verificationResult) {
+                      timestamp = response.data.lastLocationTime;
+                      verificationSuccess = true;
                   }
+              } catch (error) {
+                  // Append the error to the JSON log file
+                  const logEntry = {
+                      userId: user.id,
+                      business: business.name,
+                      error: error.message,
+                      timestamp: new Date().toISOString()
+                  };
+                  const logs = JSON.parse(fs.readFileSync(logFilePath));
+                  logs.push(logEntry);
+                  fs.writeFileSync(logFilePath, JSON.stringify(logs, null, 2)); // Pretty-print JSON
+
+                  console.error(`Error processing user ${user.id}:`, error);
               }
 
-              // If any verification result was successful, store all location objects
               if (verificationSuccess) {
-                  for (const location of locations) {
-                      // Create a new object to store in successfulVerifications
+                  // Loop over all variations to save them, as required
+                  const locations = [
+                      { latitude: business.latitude, longitude: business.longitude },
+                  ];
+
+                  for (const loc of locations) {
                       const verificationDetails = {
                           userId: user._id.toString(),
-                          latitude: location.latitude,
-                          longitude: location.longitude,
+                          latitude: loc.latitude,
+                          longitude: loc.longitude,
                           business: business.name,
                           category: business.category,
                           timestamp: timestamp,
@@ -100,22 +324,141 @@ async function polling(phoneNumber) {
                       allVerificationDetails.push(verificationDetails);
                   }
 
-                  // Stop further polling by clearing the interval
-                  clearInterval(intervalId);
+                  // Stop further polling as soon as a successful verification is found
+                  isPolling = false;
+                  clearTimeout(timeoutId);
                   console.log("Verification successful. Stopping polling.");
-                  break; // Break out of the users loop
+                  break;
               }
           }
+          if (!isPolling) break; // Exit the outer loop as well
       }
 
-      // Save the results
-      if(allVerificationDetails.length > 0) {
-        save(allVerificationDetails);
+      // Save the results if any were found
+      console.log(allVerificationDetails.length);
+      if (allVerificationDetails.length > 0) {
+          await save(allVerificationDetails);
       }
-      
-  }, 1000); // 60000 milliseconds = 1 minute
+
+      // Schedule the next polling attempt after 1 minute
+      if (isPolling) {
+          timeoutId = setTimeout(intervalFunction, 1000);
+      }
+  };
+
+  // Start the initial polling attempt
+  let timeoutId = setTimeout(intervalFunction, 1000);
 }
 
+// use latest version #001 
+// async function polling(phoneNumber) {
+//   // Retrieve users from your database or API
+//   const users = await getAllUsers();
+
+//   // Retrieve businesses from your database or API
+//   const businesses = await getAllBusinesses();
+
+//   // Initialize an empty array to store successful responses
+//   let allVerificationDetails = [];
+
+//   // Define the log file path
+//   const logFilePath = './api_logs.txt';
+
+//   // Flag to control polling
+//   let isPolling = true;
+
+//   const intervalFunction = async () => {
+//       if (!isPolling) return; // Prevent further execution if polling is stopped
+
+//       for (const business of businesses) {
+//           for (const user of users) {
+//               const location = { latitude: business.latitude, longitude: business.longitude };
+
+//               let verificationSuccess = false;
+//               let timestamp;
+
+//               try {
+//                   // Perform verification for the primary location only
+//                   const response = await axios.post('https://pplx.azurewebsites.net/api/rapid/v0/location-verification/verify', {
+//                       device: { phoneNumber: user.phoneNumber },
+//                       area: {
+//                           type: 'Circle',
+//                           location: {
+//                               latitude: location.latitude,
+//                               longitude: location.longitude
+//                           },
+//                           accuracy: 0.001
+//                       },
+//                       maxAge: 0
+//                   }, {
+//                       headers: {
+//                           'Authorization': `Bearer ${user.accessToken}`,
+//                           'Cache-Control': 'no-cache',
+//                           'accept': 'application/json',
+//                           'Content-Type': 'application/json'
+//                       }
+//                   });
+
+//                   // Log the API response to a file
+//                   const logEntry = `User ID: ${user.id}, Business: ${business.name}, Response: ${JSON.stringify(response.data)}\n`;
+//                   fs.appendFileSync(logFilePath, logEntry);
+
+//                   if (response.data.verificationResult) {
+//                       timestamp = response.data.lastLocationTime;
+//                       verificationSuccess = true;
+//                   }
+//               } catch (error) {
+//                   // Log the error to a file
+//                   const logEntry = `User ID: ${user.id}, Business: ${business.name}, Error: ${error.message}\n`;
+//                   fs.appendFileSync(logFilePath, logEntry);
+
+//                   console.error(`Error processing user ${user.id}:`, error);
+//               }
+
+//               if (verificationSuccess) {
+//                   // Loop over all variations to save them, as required
+//                   const locations = [
+//                       { latitude: business.latitude, longitude: business.longitude },
+//                   ];
+
+//                   for (const loc of locations) {
+//                       const verificationDetails = {
+//                           userId: user._id.toString(),
+//                           latitude: loc.latitude,
+//                           longitude: loc.longitude,
+//                           business: business.name,
+//                           category: business.category,
+//                           timestamp: timestamp,
+//                       };
+
+//                       allVerificationDetails.push(verificationDetails);
+//                   }
+
+//                   // Stop further polling as soon as a successful verification is found
+//                   isPolling = false;
+//                   clearTimeout(timeoutId);
+//                   console.log("Verification successful. Stopping polling.");
+//                   break;
+//               }
+//           }
+//           if (!isPolling) break; // Exit the outer loop as well
+//       }
+
+//       // Save the results if any were found
+//       console.log(allVerificationDetails.length);
+//       if (allVerificationDetails.length > 0) {
+//           await save(allVerificationDetails);
+//       }
+
+//       // Schedule the next polling attempt after 1 minute
+//       if (isPolling) {
+//           timeoutId = setTimeout(intervalFunction, 1000);
+//       }
+//   };
+
+//   // Start the initial polling attempt
+//   let timeoutId = setTimeout(intervalFunction, 1000);
+// }
 
 async function save(data) {
 // Database and collection names

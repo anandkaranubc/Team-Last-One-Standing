@@ -1,0 +1,1913 @@
+[
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:08:34.153Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T07:08:34.153Z"
+    },
+    "timestamp": "2024-10-06T07:08:34.302Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T07:08:34.453Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:34.588Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:34.734Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:34.871Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:35.015Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:35.152Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:35.311Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:35.448Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:08:35.652Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T07:08:35.652Z"
+    },
+    "timestamp": "2024-10-06T07:08:35.790Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T07:08:35.941Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:36.079Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:36.229Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:36.367Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:36.509Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:36.644Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:36.788Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:36.929Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:08:37.078Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T07:08:37.078Z"
+    },
+    "timestamp": "2024-10-06T07:08:37.216Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T07:08:37.364Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:37.502Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:37.663Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:37.799Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:37.957Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:38.094Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:38.253Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:38.389Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:08:38.547Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T07:08:38.547Z"
+    },
+    "timestamp": "2024-10-06T07:08:38.685Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T07:08:38.840Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:38.978Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:39.126Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:39.260Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:39.407Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:39.544Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:08:39.710Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:08:39.848Z"
+  },
+  {
+    "business": "ICICS",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:08:40.019Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26113,
+          "longitude": -123.24925
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": true,
+      "lastLocationTime": "2024-10-06T07:08:40.019Z"
+    },
+    "timestamp": "2024-10-06T07:08:40.154Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:10:42.957Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T07:10:42.957Z"
+    },
+    "timestamp": "2024-10-06T07:10:43.108Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T07:10:43.265Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:43.406Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:43.574Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:43.715Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:43.865Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:44.007Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:44.163Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:44.302Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:10:44.460Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T07:10:44.460Z"
+    },
+    "timestamp": "2024-10-06T07:10:44.601Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T07:10:44.733Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:44.873Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:45.045Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:45.186Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:45.338Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:45.480Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:45.636Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:45.781Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:10:45.927Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T07:10:45.927Z"
+    },
+    "timestamp": "2024-10-06T07:10:46.066Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T07:10:46.209Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:46.348Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:46.500Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:46.642Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:46.792Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:46.930Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:47.072Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:47.211Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:10:47.361Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T07:10:47.361Z"
+    },
+    "timestamp": "2024-10-06T07:10:47.508Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T07:10:47.659Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:47.797Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:47.944Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:48.083Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:48.233Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:48.373Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T07:10:48.518Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T07:10:48.658Z"
+  },
+  {
+    "business": "ICICS",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T07:10:48.819Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26113,
+          "longitude": -123.24925
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": true,
+      "lastLocationTime": "2024-10-06T07:10:48.819Z"
+    },
+    "timestamp": "2024-10-06T07:10:48.957Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T15:53:56.692Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T15:53:56.692Z"
+    },
+    "timestamp": "2024-10-06T15:53:56.989Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T15:53:57.063Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:53:57.333Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:53:57.412Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:53:57.685Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:53:57.750Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:53:58.050Z"
+  },
+  {
+    "business": "Tim Horton's",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:53:58.129Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.24872
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:53:58.405Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T15:53:58.474Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T15:53:58.474Z"
+    },
+    "timestamp": "2024-10-06T15:53:58.746Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T15:53:58.820Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:53:59.096Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:53:59.170Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:53:59.444Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:53:59.516Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:53:59.790Z"
+  },
+  {
+    "business": "Starbucks",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:53:59.853Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26545,
+          "longitude": -123.24991
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:00.128Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T15:54:00.197Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T15:54:00.197Z"
+    },
+    "timestamp": "2024-10-06T15:54:00.471Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T15:54:00.534Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:00.808Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:54:00.877Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:01.151Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:54:01.221Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:01.495Z"
+  },
+  {
+    "business": "LSK",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:54:01.586Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26908,
+          "longitude": -123.25514
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:01.877Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T15:54:02.064Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": false,
+      "lastLocationTime": "2024-10-06T15:54:02.064Z"
+    },
+    "timestamp": "2024-10-06T15:54:02.358Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 403,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer FakeToken",
+      "phoneNumber": 2345436452,
+      "message": "Please provide a valid accessToken",
+      "datetime": "2024-10-06T15:54:02.449Z",
+      "device": {
+        "phoneNumber": 2345436452
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:02.759Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "132",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:54:02.850Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "132"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:03.139Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "123",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:54:03.234Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "123"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:03.520Z"
+  },
+  {
+    "business": "ESB",
+    "response": {
+      "status": 401,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": "213",
+      "message": "Please provide a valid consented phoneNumber",
+      "datetime": "2024-10-06T15:54:03.600Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": "213"
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26335,
+          "longitude": -123.24984
+        },
+        "accuracy": 0.001
+      }
+    },
+    "timestamp": "2024-10-06T15:54:03.879Z"
+  },
+  {
+    "business": "ICICS",
+    "response": {
+      "status": 200,
+      "method": "POST",
+      "endpoint": "location-verification",
+      "api": "verify",
+      "accessToken": "Bearer 29daf7",
+      "phoneNumber": 14372314302,
+      "message": "location-verification request successful",
+      "datetime": "2024-10-06T15:54:03.953Z",
+      "cell": {
+        "phoneNumber": "14372314302",
+        "name": "team 4",
+        "message": "Hi",
+        "accessToken": "Bearer 29daf7"
+      },
+      "device": {
+        "phoneNumber": 14372314302
+      },
+      "area": {
+        "type": "Circle",
+        "location": {
+          "latitude": 49.26113,
+          "longitude": -123.24925
+        },
+        "accuracy": 0.001
+      },
+      "verificationResult": true,
+      "lastLocationTime": "2024-10-06T15:54:03.953Z"
+    },
+    "timestamp": "2024-10-06T15:54:04.263Z"
+  }
+]

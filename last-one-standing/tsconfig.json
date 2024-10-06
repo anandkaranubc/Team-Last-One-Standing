@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+      "allowJs": true,          // Allows TypeScript to handle JavaScript files
+      "jsx": "react-jsx",       // Supports React's JSX
+      "moduleResolution": "node",
+      "outDir": "./dist",       // Place compiled files in the 'dist' directory
+      "noEmit": false,          // Ensure TypeScript emits output
+      "skipLibCheck": true,     // Speeds up the compilation process
+      "esModuleInterop": true   // Helps with common import/export issues
+    },
+    "include": ["src/**/*", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
+    "exclude": ["node_modules", "dist"]
+  }
+  

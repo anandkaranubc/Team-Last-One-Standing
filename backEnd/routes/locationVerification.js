@@ -25,7 +25,7 @@ router.post('/',
               maxAge: maxAge
             }, {
               headers: {
-                'Authorization': `Bearer ${accessToken}`,
+                'Authorization': 'Bearer 29daf7',
                 'Cache-Control': 'no-cache',
                 'accept': 'application/json',
                 'Content-Type': 'application/json'

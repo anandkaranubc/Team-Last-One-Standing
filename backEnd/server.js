@@ -2,14 +2,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const {polling} = require('./routes/getData')
+const cors = require('cors');
 
 dotenv.config(); // Load environment variables
 
 const locationVerificationRoutes = require('./routes/locationVerification');
 const numberVerificationRoutes = require('./routes/numberVerification');
 const signupUserRoutes = require('./routes/signupUser');
+const loginUserRoutes = require('./routes/loginUser');
 
 const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 3000;
 // const uri = "mongodb://localhost:27017";
 
@@ -58,10 +61,16 @@ const PORT = process.env.PORT || 3000;
 // }
 
 // Define routes
-app.use(bodyParser.json());
+app.use(express.json());
+
+app.use((req, res, next) => {
+    console.log(req.method, req.path);
+    next();
+})
 app.use('/api/location-verification', locationVerificationRoutes);
 app.use('/api/number-verification', numberVerificationRoutes);
 app.use('/api/signupUser', signupUserRoutes);
+app.use('/api/loginUser', loginUserRoutes);
 
 // Start the server
  app.listen(PORT, async () => {
