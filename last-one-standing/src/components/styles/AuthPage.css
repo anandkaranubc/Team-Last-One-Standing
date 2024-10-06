@@ -1,0 +1,80 @@
+/* AuthPage.css */
+
+.auth-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+
+.auth-container {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.logo h2 {
+  text-align: center;
+  color: #764ba2;
+  margin-bottom: 20px;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #f0f0f0;
+  font-size: 16px;
+}
+
+.auth-form input:focus {
+  outline: none;
+  background: #e0e0e0;
+}
+
+.auth-form button {
+  padding: 15px;
+  background: #764ba2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background: #667eea;
+}
+
+.auth-form p {
+  text-align: center;
+  margin-top: 20px;
+  color: #555555;
+}
+
+.auth-form span {
+  color: #764ba2;
+  cursor: pointer;
+}
+
+.auth-form span:hover {
+  text-decoration: underline;
+}
