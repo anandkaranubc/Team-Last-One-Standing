@@ -22,7 +22,7 @@ function AuthPage() {
     <div className="auth-page">
       <div className="auth-container">
         <div className="logo">
-          <h2>YourApp</h2>
+          <h2>Last One Standing</h2>
         </div>
         <div className="form-container">
           <h1>{isLogin ? "Welcome Back!" : "Create Account"}</h1>

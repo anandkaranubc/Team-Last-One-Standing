@@ -78,3 +78,11 @@
 .auth-form span:hover {
   text-decoration: underline;
 }
+
+span {
+  color: #667eea;
+}
+
+span:hover {
+  cursor: pointer;
+}
