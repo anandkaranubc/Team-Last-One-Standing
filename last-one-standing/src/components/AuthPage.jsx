@@ -5,6 +5,7 @@ import "./styles/AuthPage.css";
 
 function AuthPage() {
   const [isLogin, setIsLogin] = useState(true);
+  const [agreeTerms, setAgreeTerms] = useState(false);
   const navigate = useNavigate();
 
   const toggleForm = () => {
@@ -33,7 +34,7 @@ function AuthPage() {
             <button type="submit">{isLogin ? "Login" : "Sign Up"}</button>
           </form>
           <p>
-            <input id="inpLock" type="checkbox" />
+            {/* <input id="inpLock" type="checkbox" />
             <label class="btn-lock" for="inpLock">
               <svg width="36" height="40" viewBox="0 0 36 40">
                 <path
@@ -48,7 +49,21 @@ function AuthPage() {
                 <path class="bling" d="M31.5 15H34.5"></path>
                 <path class="bling" d="M29 10L31 8"></path>
               </svg>
-            </label>
+            </label> */}
+            <div className="terms-container">
+              <input
+                type="checkbox"
+                id="terms"
+                checked={agreeTerms}
+                onChange={(e) => setAgreeTerms(e.target.checked)}
+              />
+              <label htmlFor="terms">
+                I agree to the{" "}
+                <a href="/terms" target="_blank" rel="noopener noreferrer">
+                  Terms and Conditions
+                </a>
+              </label>
+            </div>
           </p>
           <p>
             {isLogin ? "Don't have an account?" : "Already have an account?"}{" "}
